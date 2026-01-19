@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Train Story</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <!-- Screen 1 -->
+  <div id="screen1" class="screen" style="background-image:url('./assets/story01.png')">
+    <div class="dim"></div>
+    <div class="dialog">
+      <p>It’s 5 a.m. He says goodbye to his family and boards the train. <br> Blues of leaving home mixes with the
+        excitement of new city and a dream job.</p>
+      <button id="btn1" class="cta">→ Board the train</button>
+    </div>
+  </div>
+
+  <!-- Screen 2 -->
+  <div id="screen2" class="screen" style="background-image:url('./assets/story02.png')" hidden>
+    <div class="dim"></div>
+    <div class="dialog">
+      <p>An hour passes on scrolling reels as he tried to distract from his anxiety. <br>He puts his phone to charge and
+        turns to the seat window.</p>
+      <button id="btn2" class="cta">→ Look Outside</button>
+    </div>
+  </div>
+
+  <!-- Screen 3 -->
+  <div id="screen3" class="screen" style="background-image:url('./assets/story03.png')" hidden>
+    <div class="dim"></div>
+    <div class="dialog3">
+      <p>The sunrise lights up the mountains and a small town drifts by.<br>He takes off his headphones and decides to
+        simply listen.</p>
+      <button id="btn3" class="cta">→ Start Listening.</button>
+    </div>
+  </div>
+
+  <!-- Screen 4 (your existing canvas app) -->
+  <div id="screen4" class="screen" hidden>
+
+    <!-- Music toggle (only shown on Screen 4) -->
+    <button id="musicBtn" class="icon-btn" aria-label="Play/Pause song"></button>
+    <audio id="bgSong" src="./assets/song.mp3" preload="auto"></audio>
+
+    <!-- Instruction list -->
+    <ul id="instructions">
+      <li>Clap to cheer the birds</li>
+      <li>Whistle at the clouds</li>
+      <li>Hiss at the mountains</li>
+      <li>Greet the travelers</li>
+    </ul>
+
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="./js/sketch.js"></script>
+</body>
+
+</html>
